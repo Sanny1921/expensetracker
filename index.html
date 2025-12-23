@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="./index.css">
+    <title>Expense Tracker</title>
+</head>
+<body>
+    <header>Expense Tracker</header>
+    <div id="dash">
+        <div id="incomebox">
+            <h3>income</h3>
+            <p id="totalincome">₹0</p>
+        </div>
+        <div id="expensebox">
+            <h3>expense</h3>
+            <p id="totalexpense">₹0</p>
+        </div>
+        <div id="balancebox">
+            <h3>balance</h3>
+            <p id="balance">₹0</p>
+        </div>
+    </div>
+    <div class="inputincome">
+        <form id="incomeform">
+            <label for='income'>Enter your monthly income:</label>
+            <input type="number" id="income" step="0.01" placeholder="enter income amount">
+            <button type="submit">add income</button>
+        </form>
+    </div>
+    <div class="expensesform">
+        <form id="expenseform">
+            <label for='expensemes'>message:</label>
+            <input type='text' id="expensemes" placeholder="enter a reason for expending">
+            <label for="expense"></label>
+            <input type="number" id="expense" step="0.01" placeholder="enter expended amount">
+            <button type="submit">add expense</button>
+        </form>
+    </div>
+    <div class="historydata">
+        expenses history
+        <div class= format><p>reason</p><p>amount</p><p>delete</p></div>
+        <div id="expparent">
+        
+        </div>
+    </div>
+</body>
+<script src="./index.js"></script>
+</html>

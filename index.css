@@ -1,0 +1,161 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: system-ui, -apple-system, BlinkMacSystemFont, sans-serif;
+}
+
+body{
+    background: #f4f6fb;
+    padding: 20px;
+    color: #222;
+}
+
+header{
+    display:flex;
+    justify-content: center;
+    align-items: center;
+    border-top-left-radius: 8px;
+    border-top-right-radius: 8px;
+    background-color: #1e40af;
+    text-align: center;
+    color:white;
+    height: 30px;
+}
+
+#dash{
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 15px;
+    margin-bottom: 25px;
+}
+
+#dash div{
+    background: white;
+    padding: 15px;
+    border-radius: 10px;
+    box-shadow: 0 6px 16px rgba(0,0,0,0.08);
+    text-align: center;
+}
+
+#dash h3{
+    font-size: 14px;
+    text-transform: uppercase;
+    color: #666;
+    margin-bottom: 6px;
+}
+
+#dash p{
+    font-size: 20px;
+    font-weight: bold;
+}
+
+#incomebox p{
+    color: #16a34a;
+}
+#expensebox p{
+    color: #dc2626;
+}
+#balancebox p{ 
+    color: #2563eb; 
+}
+
+form{
+    background: white;
+    padding: 15px;
+    border-radius: 10px;
+    box-shadow: 0 6px 16px rgba(0,0,0,0.08);
+    margin-bottom: 20px;
+}
+
+label{
+    font-size: 13px;
+    color: #555;
+}
+
+input{
+    width: 100%;
+    margin-top: 6px;
+    margin-bottom: 10px;
+    padding: 8px 10px;
+    border-radius: 6px;
+    border: 1px solid #ccc;
+    outline: none;
+}
+
+input:focus{
+    border-color: #2563eb;
+}
+
+button{
+    width: 100%;
+    padding: 8px;
+    background: #2563eb;
+    border: none;
+    color: white;
+    border-radius: 6px;
+    cursor: pointer;
+    font-weight: 500;
+}
+
+button:hover{
+    background: #1e40af;
+}
+
+.historydata{
+    background: white;
+    padding: 15px;
+    border-radius: 10px;
+    box-shadow: 0 6px 16px rgba(0,0,0,0.08);
+}
+
+
+.format{
+    display: flex;
+    justify-content: space-between;
+    font-weight: bold;
+    border-bottom: 1px solid #ddd;
+    padding-bottom: 6px;
+    margin-bottom: 10px;
+    text-align: center;
+}
+
+.exphistory{
+    display: flex;
+    justify-content: space-between;
+    padding: 6px 0;
+    border-bottom: 1px dashed #ddd;
+    font-size: 14px;
+}
+
+.exphistory:last-child{
+    border-bottom: none;
+}
+
+.exphistory p:last-child{
+    color: #dc2626;
+    font-weight: 500;
+}
+
+.exphistory button{
+    text-align:center;
+    width: 8%;
+    padding: 8px;
+    background: #2563eb;
+    border: none;
+    color: white;
+    border-radius: 6px;
+    cursor: pointer;
+    font-weight: 500;
+}
+
+@media screen and (min-width:0px) and (max-width: 600px){
+    #dash{
+        grid-template-columns: 1fr;
+    }
+
+    #incomebox{
+        border-top-left-radius: 0px;
+        border-top-right-radius: 0px;
+    }
+}
