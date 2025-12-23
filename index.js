@@ -147,3 +147,12 @@ function updatebalance(){
 updatebalance()
 
 
+document.getElementById('clearall').addEventListener('click',()=>{
+    localStorage.removeItem("usertotalincome")
+    localStorage.removeItem("usertotalexpense")
+    localStorage.removeItem("userincomedetails")
+    localStorage.removeItem("userexpensedetails")
+    updatebalance()
+    totalincomeamm()
+    totalexpendedamm()
+})
