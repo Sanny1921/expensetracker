@@ -60,6 +60,10 @@ header{
     color: #2563eb; 
 }
 
+#clearall{
+    margin-bottom: 20px;
+}
+
 form{
     background: white;
     padding: 15px;
@@ -159,3 +163,4 @@ button:hover{
         border-top-right-radius: 0px;
     }
 }
+
